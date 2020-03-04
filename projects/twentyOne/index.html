@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/stylesheet.css">
+<html>
+<head>
+<title>Don't Say 21!</title>
+</head>
+    
+<body onload="reset()"> 
+
+  <div class = "playerSide">
+  <div class = "playerBox" id = "box2" onclick="test(2)">
+    <p id="number">2</p>
+  </div>
+  <div class = "playerBox" id="box3" onclick="test(3)">
+    <p id="number">3</p>
+  </div>
+  <div class = "playerBox" id="box4" onclick="test(4)">
+    <p id="number">4</p>
+  </div>
+</div>
+
+<div class = tallySide>
+  <div class = "tallyBox" id="tally">
+    <p id="tally">0</p>
+  </div>
+</div>
+
+<div class="computerSide">
+<div class = "computerBox" id = "autoText" onclick="random()">
+  <p id="thinking"></p>
+</div>
+<div class = "computerBox" id = "change" onclick = "change()">
+<p>Click here to take your turn!</p>
+</div>
+</div>
+
+<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="javascript\script.js"></script>
+    </body>
+</html>

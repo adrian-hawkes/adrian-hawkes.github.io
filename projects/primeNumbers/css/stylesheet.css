@@ -1,0 +1,16 @@
+body {
+    background-image: url("https://www.keele.ac.uk/scm/newsandevents/events/2019/march/mathsseminardriliakamotski/maths-background-960x640.jpg");
+    /* background: rgb(147, 172, 148); */
+    color: black;
+}
+
+.infoBox {
+    background-color: whitesmoke;
+    width: 20vw;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    padding: 5%;
+    align: center;
+    float: left;
+}
+

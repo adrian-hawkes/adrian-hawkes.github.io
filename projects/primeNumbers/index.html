@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/stylesheet.css">
+<html>
+<head>
+<title>Prime number checker</title>
+</head>
+    
+<body>
+
+<!-- Determine whether or not a number is prime -->
+
+<div class="infoBox">
+
+  <h3>In search of primes</h3>
+
+  <p>Put a number in this box to check if it's prime</p>
+  
+  <input id="answer" type="number">
+  
+  <button onclick="factors()">Check!</button>
+  
+  <p id="determination"></p>
+  <p id="demo"></p>
+    
+</div>
+
+<!-- Generate list of primes up to a certain number -->
+
+<div class="infoBox">
+
+  <h3>Prime lists</h3>
+  <p>Choose a number and see all primes up to that number</p>
+
+  <input id="answer2" type="number">
+  <button onclick="listPrimes()">Check!</button>
+  
+  <p id="determination2"></p>
+  <p id="demo2"></p>
+
+</div>
+
+<!-- Generate list of pythagorean triples up to a certain number -->
+
+<div class="infoBox">
+
+  <h3>Pythagorean Triples</h3>
+  <p>List all Pythagorean Triples up to a chosen number</p>
+
+  <input id="answer3" type="number">
+  <button onclick="pythag()">Check!</button>
+  
+  <p id="determination3"></p>
+  <p id="demo3"></p>
+
+</div>
+
+<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="javascript\script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+.playerBox, .tallyBox, .computerBox {
+    /* width: 5%;
+    height: 5%; */
+    width: 20vw;
+    color: black;
+    /* float: left; */
+    text-align: center;
+    margin: 2%;
+    border: 2px solid black;
+}
+
+.playerSide, .computerSide {
+    width: 40vw;
+}
+
+.tallySide {
+    width: 20vw;
+}
+
+#box2 {
+    background-color: pink;
+}
+
+#box3 {
+    background-color: lightblue;
+}
+
+#box4 {
+    background-color: lightgreen;
+}
+
+#autoText {
+    background-color: grey;
+}
+
+#thinking {
+    visibility: hidden;
+}
+
+#change {
+    visibility: hidden;
+}
