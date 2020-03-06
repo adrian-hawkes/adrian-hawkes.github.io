@@ -1,0 +1,21 @@
+#tally {
+    width: 80px;
+    height: 20px;
+    background-color: grey;
+    border: 3px solid black;
+    text-align: center;
+  }
+
+  .playingCard {
+      width: 7vw;
+      height: 20vh;
+      border: 2px solid black;
+      float: left;
+      margin: 10px;
+      visibility: hidden;
+      /* background-image:  */
+  }
+
+  button {
+      float: left;
+  }
