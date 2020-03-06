@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+
+<head>
+    <title>Random Quote Generator</title>
+</head>
+    
+<body>
+
+<h1>Random Quote Generator</h1>
+
+
+<select id = "sentenceQuantity">
+<option value="">Select a number of quotes</option>
+<option value="1">One</option>
+<option value="2">Two</option>
+<option value="3">Three</option>
+<option value="4">Four</option>
+<option value="5">Five</option>
+</select>
+            
+<br>
+            
+<input type="submit" id="btn1" value="Serious Quotes" onclick="quantity(firstTest)">
+       
+<input type="submit" id="btn2" value="Nonsense Quotes" onclick="quantity(secondTest)">
+
+<input type="submit" id="btn3" value="Clear/Reset Page" onclick="window.location.reload()">
+            
+<br>
+        
+
+<p id="intro"></p>
+
+
+      
+</body>
+    
+<script src="script.js"></script>
+    
+</html>

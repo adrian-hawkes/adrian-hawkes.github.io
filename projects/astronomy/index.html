@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+		  <title>Astronomy Gallery</title>
+
+		<!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/styles.css">
+
+    <!-- VENDOR JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+
+    <!-- APPLICATION JS -->
+    <script src="base.js"></script>
+    <script src="data.json"></script>
+	</head>
+	<body>
+  
+  
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 title">
+      <h2>Random Astronomy Pictures from NASA</h2>
+      <button id="reset" type="submit" class="button btn-primary" onclick="window.location.reload()">Get new random pic!</button>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-6">
+        <div id="astroPic"></div>
+        <div id="todaysPic"></div>
+      </div>
+      <div class="col-6">
+          <div id="info"></div>
+        </div>
+    </div>
+  </div>
+  
+	</body>
+</html>
+
+
+
