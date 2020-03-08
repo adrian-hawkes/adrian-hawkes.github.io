@@ -6,11 +6,22 @@ body {
 
 .infoBox {
     background-color: whitesmoke;
-    width: 20vw;
+    max-width: 20vw;
     margin-top: 5vh;
     margin-left: 2vw;
     padding: 5%;
     align: center;
     float: left;
+}
+
+#determination, #determination2, #determination3 {
+    visibility: hidden;
+    height: 4vh;
+}
+#demo, #demo2, #demo3 {
+    height: 30vh;
+    overflow: auto;
+    background-color: white;
+
 }
 

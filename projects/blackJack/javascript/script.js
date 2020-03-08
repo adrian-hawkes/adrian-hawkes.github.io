@@ -53,6 +53,7 @@ function deal(x){
   countCards();
   for(var i=0; i<dealtCards.length; i++){
       $("#card"+(i+1)).html(dealtCards[i][0] + " " + dealtCards[i][1]);
+      $("#suit"+(i+1)).html(dealtCards[i][1]);
       $("#card"+(i+1)).css("visibility", "visible");
       if(dealtCards[i][1]=="♥︎" || dealtCards[i][1]=="♦︎"){
         $("#card"+(i+1)).css("color", "red");

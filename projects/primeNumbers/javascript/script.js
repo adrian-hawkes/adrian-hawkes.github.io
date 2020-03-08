@@ -12,6 +12,7 @@ var x = document.getElementById("answer").value;
   }
   if(list.length>0) {
     list.reverse();
+    $("#determination").css("visibility", "visible");
     $("#determination").html(x + " is not a prime number. It's factors (other than one and itself) are: ")
    $.each(list, function(index, value){
      $("#demo").append(value + "<br>");
@@ -48,6 +49,7 @@ function listPrimes(p){
   for(i=2; i<=p; i++){
     checkPrime(i);
   }
+  $("#determination2").css("visibility", "visible");
   $("#determination2").append("There are " + primeList.length + " prime numbers up to " + p + "!");
   $.each(primeList, function(index, value){
       $("#demo2").append(value + "<br>");
