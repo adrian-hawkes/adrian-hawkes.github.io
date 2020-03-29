@@ -1,67 +1,87 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<link rel="stylesheet" href="css/stylesheet.css">
 <html>
 <head>
-<title>Basic Template</title>
+<title>Blackjack</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="css/stylesheet.css">
 </head>
-    
+
 <body>
-    
-    <header>Blackjack</header>
 
-<div class="container">
-    <div class="row">
-        <div class="column" id="column1">
-            <div class="playerDetails">
-            <h3>Player</h3>
-            <button id="dealCards" onclick = "dealCards()">Deal cards</button>
-            <button id="hit" onclick="deal(1)">Hit</button>
-            <p id="money"></p>
-        </div>
-    </div>
-    
-        <div class="column" id="column2">
-           
-            <p id="tally"></p>
+    <header>Blackjack</header> 
 
-            <div class="playingCard" id="card1">
-                <p id="suit1"></p>
-            </div>
+    <div class="container-fluid">        
+        <div class="row">
+          
+    <!-- player details and cards -->
+
+        <div class="col playerDetails">
+
+                <h3 id="playerName"></h3>
+                         
+            <div class="playingCard" id="playerCards1"></div>        
+            <div class="playingCard" id="playerCards2"></div>
+            <div class="playingCard" id="playerCards3"></div>         
+            <div class="playingCard" id="playerCards4"></div>     
+            <div class="playingCard" id="playerCards5"></div>
+            <div class="playingCard" id="playerCards6"></div>
+            <div class="playingCard" id="playerCards7"></div>
         
-            <div class="playingCard" id="card2">
-                <p id="suit2"></p>
+        </div>
+        
+    <!-- controls and game information -->
+
+         <div class="col gameInformation">
+
+            <div class="wrapper">
+                <button class="btn btn-primary" id="dealCards" onclick = "dealCards(2, 1)">Deal cards</button>
+            
+            
+            <button class="btn btn-warning playerButtons"id="hit" onclick="dealCards(1)">Hit</button>
+            <button class="btn btn-warning playerButtons" id="stay" onclick="dealersTurn()">Stay</button>
+            <br>
+
+            <!-- <br> -->
+            </div>
+            <p id="playerCards" title="player's tally"></p>
+            <p id="dealerCards" title="dealer's tally"></p>
+
+            <div class="wrapper" id="bettingDetails">
+                    <p id="currentCash"></p>
+                    <label for="betAmount">Bet: </label>
+                    <input type="text" id="betAmount" name="betAmount"><br>
+                    <input type="submit" value="Submit" onclick="bet()">
+                    <p id="pot"></p>
+            </div>
+        </div>
+
+    <!-- player details and cards -->
+
+            <div class="col dealerDetails">
+
+                <h3>Dealer</h3>
+    
+                <div class="playingCard" id="dealerCards1"></div>
+                <div class="playingCard" id="dealerCards2"></div>
+                <div class="playingCard" id="dealerCards3"></div>
+                <br>
+                <div class="playingCard" id="dealerCards4"></div>
+                <div class="playingCard" id="dealerCards5"></div>
+                <div class="playingCard" id="dealerCards6"></div>
+                <br>
+                <div class="playingCard" id="dealerCards7"></div>
+
             </div>
             
-            <div class="playingCard" id="card3">
-                <p id="suit3"></p>
-            </div>
-            
-            <div class="playingCard" id="card4">
-                <p id="suit4"></p>
-            </div>
-        
-            <div class="playingCard" id="card5">
-                <p id="suit5"></p>
-            </div>
-        
-            <div class="playingCard" id="card6">
-                <p id="suit6"></p>
-            </div>
-        
-            <div class="playingCard" id="card7">
-                <p id="suit7"></p>
-            </div>
         </div>
-        <div class="column" id="column3">
-            <h3>Dealer</h3>
-            <!-- <button id="dealCards" onclick = "dealCards()">Deal cards</button>
-            <button id="hit" onclick="deal(1)">Hit</button> -->
-        </div>
-    </div>
-</div>
-    
-    
+      </div>
     
     
 <script src="javascript\jquery-3.2.1.js"></script>
