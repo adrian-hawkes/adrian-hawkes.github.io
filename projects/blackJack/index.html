@@ -22,9 +22,14 @@
           
     <!-- player details and cards -->
 
-        <div class="col playerDetails">
+        <div class="col-4 playerDetails">
 
-                <h3 id="playerName"></h3>
+            <p id="playerCards" title="player's tally"></p>
+    <br>
+    <br>
+    <br>
+            <h3 id="playerName"></h3>
+
                          
             <div class="playingCard" id="playerCards1"></div>        
             <div class="playingCard" id="playerCards2"></div>
@@ -38,7 +43,7 @@
         
     <!-- controls and game information -->
 
-         <div class="col gameInformation">
+         <div class="col-4 gameInformation">
 
             <div class="wrapper">
                 <button class="btn btn-primary" id="dealCards" onclick = "dealCards(2, 1)">Deal cards</button>
@@ -47,26 +52,29 @@
             <button class="btn btn-warning playerButtons"id="hit" onclick="dealCards(1)">Hit</button>
             <button class="btn btn-warning playerButtons" id="stay" onclick="dealersTurn()">Stay</button>
             <br>
-
-            <!-- <br> -->
             </div>
-            <p id="playerCards" title="player's tally"></p>
-            <p id="dealerCards" title="dealer's tally"></p>
+
 
             <div class="wrapper" id="bettingDetails">
                     <p id="currentCash"></p>
-                    <label for="betAmount">Bet: </label>
-                    <input type="text" id="betAmount" name="betAmount"><br>
+                    <input type="text" id="betAmount" name="betAmount" placeholder="Insert stake"><br><br>
                     <input type="submit" value="Submit" onclick="bet()">
                     <p id="pot"></p>
             </div>
+
         </div>
 
     <!-- player details and cards -->
 
-            <div class="col dealerDetails">
+            <div class="col-4 dealerDetails">
 
-                <h3>Dealer</h3>
+                <p id="dealerCards" title="dealer's tally"></p>
+                <br>
+                <br>
+                <br>
+            <h3>Dealer</h3>
+
+
     
                 <div class="playingCard" id="dealerCards1"></div>
                 <div class="playingCard" id="dealerCards2"></div>

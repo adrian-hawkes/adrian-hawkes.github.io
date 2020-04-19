@@ -1,5 +1,5 @@
-body{
-    background-color: yellow;
+body {
+    font-family: "Raleway"; 
 }
 
 .card {
@@ -7,6 +7,29 @@ body{
     color: #FDFDFD;
 }
 
-.navbar {
-    background-color: #341D38;
+.frontPage {
+    text-shadow: 2px 2px white;
 }
+
+.portfolioBox {
+    background-color: #1c7c9a;
+    text-align: center;
+    color: white;
+    height: 30vh;
+    width: 100%;
+    transition: ease 2s;
+    margin-bottom: 5%;
+}
+
+.portfolioBox:hover {
+    background-color: blanchedalmond;
+    color: black;
+    height: 25vh;
+    width: 95%;
+}
+
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+

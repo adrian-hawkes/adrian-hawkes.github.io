@@ -10,7 +10,11 @@ var x = document.getElementById("answer").value;
     list.push(y);
     y--
   }
-  if(list.length>0) {
+  if(x<2){
+    $("#determination").css("visibility", "visible");
+    $("#determination").html(x + " is not a prime number.")
+  }
+  else if(list.length>0) {
     list.reverse();
     $("#determination").css("visibility", "visible");
     $("#determination").html(x + " is not a prime number. It's factors (other than one and itself) are: ")
@@ -19,6 +23,7 @@ var x = document.getElementById("answer").value;
    })
   }
   else {
+    $("#determination").css("visibility", "visible");
     $("#determination").html(x + " is a prime number");
   }
 }
