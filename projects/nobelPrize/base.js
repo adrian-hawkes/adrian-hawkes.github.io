@@ -102,7 +102,7 @@ function displayInfo(){
   let chosenCategory=document.getElementById("category");
   for(let i=0; i<request.response.prizes.length; i++){
     if(request.response.prizes[i].year==chosenYear.value && request.response.prizes[i].category==chosenCategory.value){
-      $("#info").html(`The nobel prize for ${request.response.prizes[i].category} in ${request.response.prizes[i].year} was awarded to:<br>`)
+      $("#info").append(`The nobel prize for ${request.response.prizes[i].category} in ${request.response.prizes[i].year} was awarded to:<br>`)
       for(let j=0; j<request.response.prizes[i].laureates.length; j++){
         $("#info").append(`<a href="https://www.nobelprize.org/prizes/${request.response.prizes[i].category}/${request.response.prizes[i].year}/${request.response.prizes[i].laureates[j].surname}/facts/" target="_blank"> ${request.response.prizes[i].laureates[j].firstname} ${request.response.prizes[i].laureates[j].surname}</a>: ${request.response.prizes[i].laureates[j].motivation}<br>`)
       }
