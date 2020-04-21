@@ -1,4 +1,4 @@
-var requestURL = "http://api.nobelprize.org/v1/prize.json";
+var requestURL = "https://api.nobelprize.org/v1/prize.json";
 
 var request = new XMLHttpRequest();
 
