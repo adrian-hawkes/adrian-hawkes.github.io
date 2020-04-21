@@ -1,4 +1,4 @@
-var requestURL = "https://api.nobelprize.org/v1/prize.json";
+var requestURL = "http://api.nobelprize.org/v1/prize.json";
 
 var request = new XMLHttpRequest();
 
@@ -100,7 +100,6 @@ function displayInfo(){
   $("#info").html("");
   let chosenYear=document.getElementById("ddlYears");
   let chosenCategory=document.getElementById("category");
-  $("#info").html(`There was no prize for this category awarded in this year.`);
   for(let i=0; i<request.response.prizes.length; i++){
     if(request.response.prizes[i].year==chosenYear.value && request.response.prizes[i].category==chosenCategory.value){
       $("#info").html(`The nobel prize for ${request.response.prizes[i].category} in ${request.response.prizes[i].year} was awarded to:<br>`)
