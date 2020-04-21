@@ -1,0 +1,36 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: whitesmoke;
+  }
+  
+  html, body, {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+
+  @media only screen and (max-width: 600px) {
+    img {
+      height: 40vh;
+    }
+  }
+  
+  #info {
+    height: 60vh;
+    overflow-y: scroll;
+    padding-right: 10px;
+    text-align: justify; 
+  }
+
+  @media only screen and (max-width: 600px) {
+    #info {
+      height: 40vh;
+    }
+  }  
